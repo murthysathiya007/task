@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     public function run()
     {
        // check if table user is empty
-       if(DB::table('users')->count() == 0){
+       if(DB::table('users')->count() === 0){
 
         DB::table('users')->insert([
             [
